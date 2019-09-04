@@ -19,7 +19,7 @@ print(tokens_1)
 tokens_2 = nltk.word_tokenize(sent2)
 print(tokens_2)
 
-# 整理两句的词表，并按照ASCII的排序输出
+# 整理两句的词表，并按照ASCII的排序输出(大写字母的ASCII排序在小写字母之前)
 vocab_1 = sorted(set(tokens_1))
 print(vocab_1)
 
