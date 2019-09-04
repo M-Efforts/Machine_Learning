@@ -3,6 +3,12 @@
 # 导入NLTK
 import nltk
 
+# 第一次使用nltk时需要运行以下语句
+
+# 安装位置在C:\Users\用户名\AppData\Roaming\nltk_data
+# nltk.download('punkt')
+# nltk.download('averaged_perceptron_tagger')
+
 sent1 = 'The cat is walking in the bedroom'
 sent2 = 'A dog was running across the kitchen'
 
