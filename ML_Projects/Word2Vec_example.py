@@ -16,9 +16,9 @@ X, Y = news.data, news.target
 
 # 定义一个函数名为news_to_sentences的函数将每条新闻中的句子逐一剥离出来，并返回一个句子的列表
 def news_to_sentences(new):
-    new_text = BeautifulSoup(new).get_text()
-    tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
-    raw_sentences = tokenizer.tokenize(new_text)
+    new_text = BeautifulSoup(new).get_text()  # 返回经过BeautifulSoup处理格式化后的字符串文本
+    tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')  # 加载英文的句子划分模型
+    raw_sentences = tokenizer.tokenize(new_text)  # 对句子进行分割
     sentence = []
     for sent in raw_sentences:
         sentence.append(re.sub('[^a-zA-Z]', ' ', sent.lower().strip()).split())
