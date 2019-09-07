@@ -6,9 +6,14 @@ from sklearn.datasets import fetch_20newsgroups
 from bs4 import BeautifulSoup
 # 导入nltk和re工具包
 import nltk
+
+# 需要使用外网执行以下语句
+# nltk.down('punkt')
+
 import re
 # 从gensim.models中导入word2vec
 from gensim.models import word2vec
+
 
 news = fetch_20newsgroups(subset='all')
 X, Y = news.data, news.target
