@@ -1,3 +1,5 @@
+# XGBoost分类模型对Titanic数据实例
+
 # 导入pandas用于数据分析
 import pandas as pd
 # 导入训练、测试集划分工具
